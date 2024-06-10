@@ -415,6 +415,8 @@ h1, h2, h3, h4, h5,
 .overlap-to-top {
   margin-top: -150px; }
 
+.site-logo{
+  }
 .ul-check {
   margin-bottom: 50px; }
   .ul-check li {
@@ -476,7 +478,7 @@ h1, h2, h3, h4, h5,
     font-size: 1.7rem; }
     .site-navbar .site-logo a {
       color: #43ab92;
-      text-transform: lowercase; }
+      text-transform:uppercase; }
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
         float: left;
