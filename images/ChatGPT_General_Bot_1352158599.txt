@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Адаптивный слайдер</title>
+  <style>
+    /* ... (стили слайдера) ... */
+
+    /* Модальное окно */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-content h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .modal-content p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .modal-content #modalPrice {
+      font-weight: bold;
+    }
+
+    /* Форма оплаты */
+    #paymentForm {
+      margin-top: 20px;
+    }
+
+    #paymentForm input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #paymentForm button {
+      background-color: #009688; /* Зеленый */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #paymentForm button:hover {
+      background-color: #00796B; /* Темнее зеленый */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <!-- Карточки товаров будут здесь -->
+    </div>
+    <div class="slider-controls">
+      <button class="prev">Назад</button>
+      <button class="next">Вперед</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="">
+      <p id="modalDescription"></p>
+      <p id="modalPrice"></p>
+      <form id="paymentForm">
+        <input type="hidden" id="productId">
+        <input type="text" id="cardNumber" placeholder="Номер карты">
+        <input type="text" id="cvv" placeholder="CVV">
+        <button type="submit">Оплатить</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ... (JavaScript код из предыдущих примеров) ...
+  </script>
+
+</body>
+</html>
+```
+
+**Объяснения:**
+
+* **Стили для модального окна:**
+    * `.modal`:
+        * `display: none;` - скрывает модальное окно по умолчанию.
+        * `position: fixed;` - фиксирует модальное окно относительно окна браузера.
+        * `z-index: 1;` - устанавливает индекс z, чтобы модальное окно находилось поверх других элементов.
+        * `background-color: rgba(0, 0, 0, 0.4);` -  делает фон полупрозрачным черным.
+    * `.modal-content`:
+        * `background-color: #fefefe;` -  белый фон.
+        * `margin: 15% auto;` - центрирует модальное окно по горизонтали.
+        * `padding: 20px;` -  отступы внутри модального окна.
+        * `border: 1px solid #888;` -  тонкая серая граница.
+        * `width: 80%;` -  ширина модального окна.
+        * `max-width: 600px;` -  максимальная ширина модального окна.
+        * `border-radius: 8px;` -  округлые углы.
+        * `box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);` -  тень.
+    * `.close`:
+        * `color: #aaa;` -  серый цвет.
+        * `float: right;` -  выравнивание справа.
+        * `font-size: 28px;` -  размер шрифта.
+        * `font-weight: bold;` -  жирный шрифт.
+        * `cursor: pointer;` -  курсор в виде указателя.
+    * **Другие стили:**
+        * `h2`, `img`, `p`: стили для заголовка, изображения и текста внутри модального окна.
+        * `#paymentForm`:  стили для формы оплаты, чтобы она соответствовала стилю модального окна.
+
+* **JavaScript:**
+    * В JavaScript коде, который вы добавили ранее, уже есть обработчики событий для показа/скрытия модального окна (`modal.style.display = 'block';`, `modal.style.display = 'none';`).
+
+Теперь модальное окно будет выглядеть гармонично со слайдером, используя те же цвета, стили и шрифты.

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Стул C/C LIBZON",
+    "description": "Покрытие - велюр ",
+    "image": "images/1.jpg",
+    "price": 27000
+  },
+  {
+    "id": 2,
+    "title": "Стул C/C PARIS",
+    "description": "Покрытие - велюр ",
+    "image": "images/2.jpg",
+    "price": 16000
+  },
+  {
+    "id": 3,
+    "title": " Стол C/C MILANO",
+    "description": "Габариты (ДхШхВ):205х105х80 ",
+    "image": "images/3.jpg",
+    "price": 188000
+  },
+  {
+    "id": 4,
+    "title": "Кухонная мебель PALERMA",
+    "description": "Сделано в турции",
+    "image": "images/6.jpg",
+    "price": 150000
+  },
+  {
+    "id": 5,
+    "title": "Шкаф PALERMA",
+    "description": "Производство Турция",
+    "image": "images/5.jpg",
+    "price": 150000
+  },
+  {
+    "id": 6,
+    "title": " Стол C/C MILANO",
+    "description": "Габариты (ДхШхВ):205х105х80 ",
+    "image": "images/4.jpg",
+    "price": 164000
+  }
+]

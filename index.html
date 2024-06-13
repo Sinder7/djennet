@@ -137,7 +137,43 @@
     </div>
   </div>
 
+  <div class="slider">
+    <div class="container">
+      <div class="ow align-items-center">
+        <div class="slider-container">
+          <div class="slider-track" id="sliderTrack">
+            <!-- Карточки товаров будут здесь -->
+          </div>
+          <div class="slider-controls">
+            <button class="prev">Назад</button>
+            <button class="next">Вперед</button>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev">Назад</button>
+          <button class="next">Вперед</button>
+        </div>
 
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalPrice"></p>
+            <form id="paymentForm">
+              <input type="hidden" id="productId">
+              <!-- Добавьте элементы формы для оплаты -->
+              <input type="text" id="cardNumber" placeholder="Номер карты">
+              <input type="text" id="cvv" placeholder="CVV">
+              <button type="submit">Оплатить</button>
+            </form>
+          </div>
+        </div>
+
+        <script src="js/script.js"></script>
+      </div>
+    </div>
+  </div>
 
 
   <div class="site-section" id="towars">
